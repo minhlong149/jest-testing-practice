@@ -26,7 +26,7 @@ npm install --save-dev babel-jest @babel/core @babel/preset-env
 
 Configure Babel to target your current version of Node by creating a `babel.config.js` file in the root of your project:
 
-```json
+```js
 module.exports = {
   presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
 };
@@ -40,7 +40,7 @@ npm install --save-dev @babel/preset-typescript
 
 Add `@babel/preset-typescript` to the list of presets in your `babel.config.js`.
 
-```json
+```js
 module.exports = {
   presets: [
     ['@babel/preset-env', {targets: {node: 'current'}}],
